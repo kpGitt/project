@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("galaxy.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 20, 0.65);
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 70px;
+}
+nav {
+    position: absolute;
+    right: 70px;
+}
+
+header h1 {
+    text-shadow: 0 0 10px #00d9ff;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 14px 40px;
+    font-size: 16px;
+    border: 2px solid #00d9ff;
+    border-radius: 30px;
+    background: transparent;
+    color: #00d9ff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    letter-spacing: 1px;
+}
+
+.hero button:hover {
+    background: #00d9ff;
+    color: black;
+    box-shadow: 
+        0 0 4px #00d9ff,
+        0 0 12px #00d9ff,
+        0 0 10px #00d9ff;
+    transform: scale(1.08);
+}
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+}
+.hero p {
+    font-size: 18px;
+    color: #cfd8ff;
+}
+
